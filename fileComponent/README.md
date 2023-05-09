@@ -42,7 +42,7 @@
 
 <!-- ABOUT THE PROJECT -->
 
-## About The Project
+## About The Component
 
 This is a reusable component in Python that allows users to save and load Python objects
 to and from a file. This component could be useful for applications that require persistent storage of data.
