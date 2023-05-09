@@ -96,7 +96,7 @@ Next, I leave you the steps to follow to be able to use this component in your p
 1. Download this repo and put it in your project to be able to call it.
 2. Once the repository is in the project folder you want to use, all you have to do is import it into the file you need.
    ```sh
-   from component import component
+   from component import *
    ```
 3. This is how easy it is to install the component, now we are going to see how to use all its methods.
 
