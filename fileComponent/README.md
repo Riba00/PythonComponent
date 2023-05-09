@@ -7,10 +7,10 @@
     <img src="img/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Python Object Class Component</h3>
+<h3 align="center">File Component</h3>
 
   <p align="center">
-    Python component saves and restore objects
+    Python component saves and restore objects from file
     <br />
   </p>
 </div>
