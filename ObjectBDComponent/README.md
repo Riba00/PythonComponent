@@ -1,7 +1,15 @@
 # component for zodb
 
 <h2> Que es això </h2>
-<p>es tracta d'un component que crea una base de dades per zodb i es capaç de insertar i recuperar dades dintre d'aquesta cal recordar que per utilitzarlo cal instalar zodb a dintre del projecte</p>
+<p>es tracta d'un component que crea una base de dades per zodb i es capaç de insertar i recuperar dades dintre d'aquesta </p>
+  
+  
+  
+  
+  
+  <h2> requisits </h2>
+  
+ <p> cal recordar que per utilitzarlo cal instalar zodb a dintre del projecte partint des de la base de que ja es te instalat python</p>
 
 ```
 pip install zodb
