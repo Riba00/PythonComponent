@@ -1,6 +1,6 @@
 # component for zodb
 ## instalació 
-<p>per utilitzar el component cal importarlo desde el lloc on anem a utilitzar-lo </p>
+<p>per utilitzar el component cal importar-lo des del lloc on anem a utilitzar-lo </p>
 <p>from zodbComponent import zodbComponent</p>
 <h2>utització</h2> 
 
