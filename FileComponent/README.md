@@ -96,7 +96,7 @@ Next, I leave you the steps to follow to be able to use this component in your p
 1. Download this repo and put it in your project to be able to call it.
 2. Once the repository is in the project folder you want to use, all you have to do is import it into the file you need.
    ```sh
-   from component import *
+   from fileComponent import *
    ```
 3. This is how easy it is to install the component, now we are going to see how to use all its methods.
 
@@ -116,37 +116,6 @@ To save the object use the method <b>saveObject</b>. You have to pass 2 argument
 
    ```sh
    component.saveObject(object, filePath)
-   ```
-
-### Restore Object
-
-To restore the object use the method <b>restoreObject</b>. You have to pass 2 arguments:
-* index > The index (id) of the object you want to restore.
-* filePath -> The path of the file you will restore the object.
-
-   ```sh
-   component.restoreObject(index, filePath)
-   ```
-
-### Update Object
-
-To update an object use the method <b>updateObject</b>. You have to pass 3 arguments:
-* index -> The index (id) you want to update.
-* newObject -> The new object you want to save.
-* filePath -> The path of the file you will update the object.
-
-   ```sh
-   component.updateObject(index, newObject, filePath)
-   ```
-
-### Delete Object
-
-To delete the object use the method <b>deleteObject</b>. You have to pass 2 arguments:
-* index -> The index (id) you want to delete.
-* filePath -> The path of the file you will delete an object.
-
-   ```sh
-   component.deleteObject(index, filePath)
    ```
 
 ### Delete Objects
