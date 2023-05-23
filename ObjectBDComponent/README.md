@@ -1,13 +1,16 @@
 # component for zodb
-
-<h2>insert </h2>
-<p>per insartar dades cal donar un string amb la base de dades(fitxer), una string amb el nom de la taula i un objecte a insertar 
+## instalation 
+<p>per utilitzar el component cal importarlo desde el lloc on anem a utilitzar-lo </p>
+<p>from zodbComponent import zodbComponent</p>
+ <h2>usage</h2> 
+<h3>insert </h3>
+<p>per insertar dades cal donar un string amb  una string amb el nom de la taula i un objecte a insertar 
 </p>
-<p>zodb.insert('file.sh','name_of_the_table',object_to_save) 
+<p>zodb.insert('name_of_the_table',object_to_save) 
 </p>
-<h2>recuperar</h2>
-<p>per recuperar dades donem un string amb la base de dades(fitxer) i una string amb el nom de la taula
+<h3>recuperar</h3>
+<p>per recuperar dades donem una string amb el nom de la taula
 </p>
-<p>zodb.recuperar('file.sh','name_of_the_table') </p>
+<p>zodb.recuperar('name_of_the_table') </p>
 
 
