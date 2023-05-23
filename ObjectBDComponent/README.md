@@ -1,7 +1,10 @@
 # component for zodb
 ## instalació 
 <p>per utilitzar el component cal importar-lo des del lloc on anem a utilitzar-lo </p>
-<p>from zodbComponent import zodbComponent</p>
+
+```
+from zodbComponent import zodbComponent
+```
 <h2>utització</h2> 
 
 <h3>declarar el nom de la base de dades </h3>
