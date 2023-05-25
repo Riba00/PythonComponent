@@ -53,5 +53,5 @@ Crea un nou usuari a la base de dades.
 
 - `nom`: Nom d'usuari
 - `contra`: Contrasenya de l'usuari
-- Utilitzem del per elimnar el camp _id i que mongodb s'encarregui de crear-la random
+- Utilitzem `del` per eliminar el camp _id i que mongodb s'encarregui de crear-la random
 - Retorna: Identificador únic generat per MongoDB per a l'usuari creat
