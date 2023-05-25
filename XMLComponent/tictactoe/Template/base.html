@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/tictactoe.css">
+    <script src="static/tictactoe.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Tictactoe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Options
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/joc">Crear partida nova</a></li>
+                        <li><a class="dropdown-item" href="/recuperarPartida">Carregar partida</a></li>
+                        <li><a class="dropdown-item" methods="GET" href="/saveGame">Guarda partida</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row row-cols-auto">
+
+        {% for i in board %}
+        <div class="col emptyCell" id="{{ loop.index }}" ondrop="drop(event)" {% if i== 0 %}
+             ondragover="allowDrop(event)" {% endif %}>
+            {% if i == 1 %}
+            <div class="token1"></div>
+            {% endif %}
+            {% if i == 2 %}
+            <div class="token2"></div>
+            {% endif %}
+        </div>
+        {% if loop.index is divisibleby 3 %}
+    </div>
+    <div class="row row-cols-auto">
+        {% endif %}
+        {% endfor %}
+    </div>
+
+
+</div>
+<div class="container pieces">
+    <div class="row pieces playerName">
+        Player One
+    </div>
+    <div class="row row-cols-auto pieces">
+        {% for i in range( tokens1 ) %}
+        <div class="col">
+            <div class="token1" id="token1" draggable="true" ondragstart="drag(event)"></div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="row pieces playerName">
+        Player Two
+    </div>
+    <div class="row row-cols-auto pieces">
+        {% for i in range( tokens2 ) %}
+        <div class="col">
+            <div class="token2" id="token2" draggable="true" ondragstart="drag(event)"></div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="row row-cols-auto pieces">
+        <form action="movement" method="post">
+            <input type="text" name="position" id="position" hidden>
+            <input type="submit" id="submitButton" value="Done" disabled>
+        </form>
+    </div>
+</div>
+</body>
+</html>

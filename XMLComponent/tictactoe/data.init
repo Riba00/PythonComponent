@@ -1,0 +1,5 @@
+[postgresql]
+host=localhost
+database=componentsuf6
+user=estudiante
+password=3stud14nt3
